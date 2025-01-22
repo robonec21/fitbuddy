@@ -1,0 +1,27 @@
+# Server Configuration
+server.port=8080
+server.servlet.context-path=/
+server.ssl.enabled=false
+
+# Database Configuration
+spring.datasource.url=jdbc:postgresql://localhost:5432/fitbuddy_db
+spring.datasource.username=your_db_username
+spring.datasource.password=your_db_password
+spring.datasource.driver-class-name=org.postgresql.Driver
+
+# JPA Development Settings
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.format_sql=true
+
+# Security Configuration
+spring.security.user.name=your_admin_username
+spring.security.user.password=your_admin_password_hash
+
+# Logging Configuration
+logging.level.org.springframework.security=DEBUG
+logging.level.org.springframework.web=INFO
+logging.level.org.hibernate=INFO
+
+# JWT Configuration
+app.jwtSecret=your_jwt_secret_key
+app.jwtExpirationInMs=86400000
